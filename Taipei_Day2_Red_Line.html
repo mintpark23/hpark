@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6d76a6e728123bebf8f1e3ed84564ea8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6d76a6e728123bebf8f1e3ed84564ea8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6d76a6e728123bebf8f1e3ed84564ea8 = L.map(
+                "map_6d76a6e728123bebf8f1e3ed84564ea8",
+                {
+                    center: [25.023985558805013, 121.52460320364497],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_c4dc19984f0d97921a1f4f31ec3f0e46 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c4dc19984f0d97921a1f4f31ec3f0e46.addTo(map_6d76a6e728123bebf8f1e3ed84564ea8);
+        
+    
+            var poly_line_0ec14620debaa8346294950198dbb12b = L.polyline(
+                [[25.023985558805013, 121.52460320364497], [25.1023, 121.5485], [25.0354, 121.5219], [25.037874449251017, 121.5061507946264], [25.0339, 121.5644], [25.0509, 121.5775], [25.023985558805013, 121.52460320364497]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_6d76a6e728123bebf8f1e3ed84564ea8);
+        
+    
+            poly_line_0ec14620debaa8346294950198dbb12b.bindTooltip(
+                `<div>
+                     Day2_Red_Line 경로
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fa59e386b398679f49990353e26677d1 = L.marker(
+                [25.023985558805013, 121.52460320364497],
+                {
+}
+            ).addTo(map_6d76a6e728123bebf8f1e3ed84564ea8);
+        
+    
+            var beautify_icon_fa9ab4a02120241c1f863af637c032f3 = new L.BeautifyIcon.icon(
+                {
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "red",
+  "backgroundColor": "#FFF",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": true,
+  "text": 1,
+}
+            )
+            marker_fa59e386b398679f49990353e26677d1.setIcon(beautify_icon_fa9ab4a02120241c1f863af637c032f3);
+        
+    
+        var popup_be5c4f97cc97f146f4c3553fdf0a3531 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36e5caf39a37eada4068a35fd9c4e42c = $(`<div id="html_36e5caf39a37eada4068a35fd9c4e42c" style="width: 100.0%; height: 100.0%;">1. 숙소</div>`)[0];
+                popup_be5c4f97cc97f146f4c3553fdf0a3531.setContent(html_36e5caf39a37eada4068a35fd9c4e42c);
+            
+        
+
+        marker_fa59e386b398679f49990353e26677d1.bindPopup(popup_be5c4f97cc97f146f4c3553fdf0a3531)
+        ;
+
+        
+    
+    
+            marker_fa59e386b398679f49990353e26677d1.bindTooltip(
+                `<div>
+                     1. 숙소
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fa59e386b398679f49990353e26677d1.setIcon(beautify_icon_fa9ab4a02120241c1f863af637c032f3);
+            
+    
+            var marker_d88888248865d4b3f93e8f2d01c51634 = L.marker(
+                [25.1023, 121.5485],
+                {
+}
+            ).addTo(map_6d76a6e728123bebf8f1e3ed84564ea8);
+        
+    
+            var beautify_icon_f5e3e950b45185f70c43b9afbf1894f6 = new L.BeautifyIcon.icon(
+                {
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "red",
+  "backgroundColor": "#FFF",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": true,
+  "text": 2,
+}
+            )
+            marker_d88888248865d4b3f93e8f2d01c51634.setIcon(beautify_icon_f5e3e950b45185f70c43b9afbf1894f6);
+        
+    
+        var popup_f6b794e6b3350418eca0a4a111270d3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_976bf90ed5486d583107239e68e3d595 = $(`<div id="html_976bf90ed5486d583107239e68e3d595" style="width: 100.0%; height: 100.0%;">2. 고궁박물관</div>`)[0];
+                popup_f6b794e6b3350418eca0a4a111270d3c.setContent(html_976bf90ed5486d583107239e68e3d595);
+            
+        
+
+        marker_d88888248865d4b3f93e8f2d01c51634.bindPopup(popup_f6b794e6b3350418eca0a4a111270d3c)
+        ;
+
+        
+    
+    
+            marker_d88888248865d4b3f93e8f2d01c51634.bindTooltip(
+                `<div>
+                     2. 고궁박물관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d88888248865d4b3f93e8f2d01c51634.setIcon(beautify_icon_f5e3e950b45185f70c43b9afbf1894f6);
+            
+    
+            var marker_3e11ae10d2aaf5bb288b5a0431e81e04 = L.marker(
+                [25.0354, 121.5219],
+                {
+}
+            ).addTo(map_6d76a6e728123bebf8f1e3ed84564ea8);
+        
+    
+            var beautify_icon_68c51bec359593d2a1e24f0fbe714022 = new L.BeautifyIcon.icon(
+                {
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "red",
+  "backgroundColor": "#FFF",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": true,
+  "text": 3,
+}
+            )
+            marker_3e11ae10d2aaf5bb288b5a0431e81e04.setIcon(beautify_icon_68c51bec359593d2a1e24f0fbe714022);
+        
+    
+        var popup_8b8274992a1befb06dcf04f9191bc1c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d417fb28a0b3ba6b3cd350e618ac83f = $(`<div id="html_9d417fb28a0b3ba6b3cd350e618ac83f" style="width: 100.0%; height: 100.0%;">3. 중정기념당</div>`)[0];
+                popup_8b8274992a1befb06dcf04f9191bc1c4.setContent(html_9d417fb28a0b3ba6b3cd350e618ac83f);
+            
+        
+
+        marker_3e11ae10d2aaf5bb288b5a0431e81e04.bindPopup(popup_8b8274992a1befb06dcf04f9191bc1c4)
+        ;
+
+        
+    
+    
+            marker_3e11ae10d2aaf5bb288b5a0431e81e04.bindTooltip(
+                `<div>
+                     3. 중정기념당
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3e11ae10d2aaf5bb288b5a0431e81e04.setIcon(beautify_icon_68c51bec359593d2a1e24f0fbe714022);
+            
+    
+            var marker_15495a0d3e1362aba130a0c4bfc2151e = L.marker(
+                [25.037874449251017, 121.5061507946264],
+                {
+}
+            ).addTo(map_6d76a6e728123bebf8f1e3ed84564ea8);
+        
+    
+            var beautify_icon_6c5292228a88f858cf0df919959ae17b = new L.BeautifyIcon.icon(
+                {
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "red",
+  "backgroundColor": "#FFF",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": true,
+  "text": 4,
+}
+            )
+            marker_15495a0d3e1362aba130a0c4bfc2151e.setIcon(beautify_icon_6c5292228a88f858cf0df919959ae17b);
+        
+    
+        var popup_b5ccb10338c4191b80b02581c586cd3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e38c711b4b49cc440a1ad209a1a155d = $(`<div id="html_3e38c711b4b49cc440a1ad209a1a155d" style="width: 100.0%; height: 100.0%;">4. 키키</div>`)[0];
+                popup_b5ccb10338c4191b80b02581c586cd3e.setContent(html_3e38c711b4b49cc440a1ad209a1a155d);
+            
+        
+
+        marker_15495a0d3e1362aba130a0c4bfc2151e.bindPopup(popup_b5ccb10338c4191b80b02581c586cd3e)
+        ;
+
+        
+    
+    
+            marker_15495a0d3e1362aba130a0c4bfc2151e.bindTooltip(
+                `<div>
+                     4. 키키
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_15495a0d3e1362aba130a0c4bfc2151e.setIcon(beautify_icon_6c5292228a88f858cf0df919959ae17b);
+            
+    
+            var marker_a71eb6700a53b27131c90e93107b2274 = L.marker(
+                [25.0339, 121.5644],
+                {
+}
+            ).addTo(map_6d76a6e728123bebf8f1e3ed84564ea8);
+        
+    
+            var beautify_icon_3d518e8004a1d9e719b112abeb2b321c = new L.BeautifyIcon.icon(
+                {
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "red",
+  "backgroundColor": "#FFF",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": true,
+  "text": 5,
+}
+            )
+            marker_a71eb6700a53b27131c90e93107b2274.setIcon(beautify_icon_3d518e8004a1d9e719b112abeb2b321c);
+        
+    
+        var popup_556b37eab26bd3d3b863e786ff1c09e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5719aa64799143a76436219df76dca49 = $(`<div id="html_5719aa64799143a76436219df76dca49" style="width: 100.0%; height: 100.0%;">5. 타이베이101</div>`)[0];
+                popup_556b37eab26bd3d3b863e786ff1c09e4.setContent(html_5719aa64799143a76436219df76dca49);
+            
+        
+
+        marker_a71eb6700a53b27131c90e93107b2274.bindPopup(popup_556b37eab26bd3d3b863e786ff1c09e4)
+        ;
+
+        
+    
+    
+            marker_a71eb6700a53b27131c90e93107b2274.bindTooltip(
+                `<div>
+                     5. 타이베이101
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a71eb6700a53b27131c90e93107b2274.setIcon(beautify_icon_3d518e8004a1d9e719b112abeb2b321c);
+            
+    
+            var marker_9843799f61b09cdb7bbd49c38947da3a = L.marker(
+                [25.0509, 121.5775],
+                {
+}
+            ).addTo(map_6d76a6e728123bebf8f1e3ed84564ea8);
+        
+    
+            var beautify_icon_d5b956923366efa6c30150cc5bb8c7a0 = new L.BeautifyIcon.icon(
+                {
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "red",
+  "backgroundColor": "#FFF",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": true,
+  "text": 6,
+}
+            )
+            marker_9843799f61b09cdb7bbd49c38947da3a.setIcon(beautify_icon_d5b956923366efa6c30150cc5bb8c7a0);
+        
+    
+        var popup_376b00b4e3600893d0782a78768c3c6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e664fc51195540a7553f13aa723e3569 = $(`<div id="html_e664fc51195540a7553f13aa723e3569" style="width: 100.0%; height: 100.0%;">6. 라오허제야시장</div>`)[0];
+                popup_376b00b4e3600893d0782a78768c3c6b.setContent(html_e664fc51195540a7553f13aa723e3569);
+            
+        
+
+        marker_9843799f61b09cdb7bbd49c38947da3a.bindPopup(popup_376b00b4e3600893d0782a78768c3c6b)
+        ;
+
+        
+    
+    
+            marker_9843799f61b09cdb7bbd49c38947da3a.bindTooltip(
+                `<div>
+                     6. 라오허제야시장
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9843799f61b09cdb7bbd49c38947da3a.setIcon(beautify_icon_d5b956923366efa6c30150cc5bb8c7a0);
+            
+    
+            var marker_0416d059ba80070322f2a61611fcb2fb = L.marker(
+                [25.023985558805013, 121.52460320364497],
+                {
+}
+            ).addTo(map_6d76a6e728123bebf8f1e3ed84564ea8);
+        
+    
+            var beautify_icon_1544145f9ec68e20e58715d89e30efcf = new L.BeautifyIcon.icon(
+                {
+  "iconShape": "marker",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "red",
+  "backgroundColor": "#FFF",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": true,
+  "text": 7,
+}
+            )
+            marker_0416d059ba80070322f2a61611fcb2fb.setIcon(beautify_icon_1544145f9ec68e20e58715d89e30efcf);
+        
+    
+        var popup_c2002303cf621cc71dedd681295dc9ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_965f1606e3e2e4a4d1d838e023efa3a3 = $(`<div id="html_965f1606e3e2e4a4d1d838e023efa3a3" style="width: 100.0%; height: 100.0%;">7. 숙소</div>`)[0];
+                popup_c2002303cf621cc71dedd681295dc9ae.setContent(html_965f1606e3e2e4a4d1d838e023efa3a3);
+            
+        
+
+        marker_0416d059ba80070322f2a61611fcb2fb.bindPopup(popup_c2002303cf621cc71dedd681295dc9ae)
+        ;
+
+        
+    
+    
+            marker_0416d059ba80070322f2a61611fcb2fb.bindTooltip(
+                `<div>
+                     7. 숙소
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0416d059ba80070322f2a61611fcb2fb.setIcon(beautify_icon_1544145f9ec68e20e58715d89e30efcf);
+            
+    
+            map_6d76a6e728123bebf8f1e3ed84564ea8.fitBounds(
+                [[25.023985558805013, 121.52460320364497], [25.1023, 121.5485], [25.0354, 121.5219], [25.037874449251017, 121.5061507946264], [25.0339, 121.5644], [25.0509, 121.5775], [25.023985558805013, 121.52460320364497]],
+                {}
+            );
+        
+</script>
+</html>
